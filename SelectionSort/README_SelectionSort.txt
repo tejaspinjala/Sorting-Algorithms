@@ -7,6 +7,11 @@ Time complexity:
 
 Space complexity: O(1)
 
+Cycle	Number of Comparison
+1st	(n-1)
+2nd	(n-2)
+3rd	(n-3)
+
 
 1) Set the first element as minimum
 2) Compare minimum with the second element. If the second element is smaller than minimum, 
@@ -16,3 +21,9 @@ Space complexity: O(1)
 3) After each iteration, minimum is placed in the front of the unsorted list.
 4) For each iteration, indexing starts from the first unsorted element. Step 1 to 3 are repeated 
     until all the elements are placed at their correct positions.
+
+The selection sort is used when:
+    A small list is to be sorted
+    cost of swapping does not matter
+    checking of all the elements is compulsory
+    cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n2) of bubble sort)

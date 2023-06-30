@@ -8,7 +8,7 @@ def bubblesort(array):
         for j in range(0, len(array) - 1):
             # compare two adjacent elements
             # change > to < to sort decending order
-            if array[j] < array[j + 1]:
+            if array[j] > array[j + 1]:
                 # swapping happens if they are not in
                 # the intended order
                 temp = array[j]
